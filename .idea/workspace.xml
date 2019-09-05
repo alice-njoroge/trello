@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88993ef7-5d84-4039-8f66-c835aa0cc4ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/Projects/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Projects/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Projects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +164,7 @@
       <workItem from="1567497819237" duration="171000" />
       <workItem from="1567501936461" duration="9147000" />
       <workItem from="1567575784463" duration="607000" />
-      <workItem from="1567640278999" duration="1365000" />
+      <workItem from="1567640278999" duration="3086000" />
     </task>
     <servers />
   </component>
@@ -189,7 +189,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/Projects/index.blade.php</url>
-          <line>17</line>
+          <line>19</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -43,7 +43,7 @@ class ProjectController extends Controller
         ]);
         Project::create($request->all());
 
-        return redirect('/projects')->with('success', 'Project created successfully');
+        return redirect('/projects')->with('message', 'Project created successfully');
     }
 
     /**
@@ -54,7 +54,9 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        //
+        $project = Project::findOrFail($id);
+        return view('projects.show')->withProject($project);
+
     }
 
     /**
