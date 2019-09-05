@@ -14,7 +14,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-       $projects = Project::all();
+        $projects = Project::all();
         return view('Projects.index', ['projects' => $projects]);
 
     }
@@ -32,14 +32,14 @@ class ProjectController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
         $request->validate([
-            'name'=> 'required|string',
-            'description'=> 'required|string'
+            'name' => 'required|string',
+            'description' => 'required|string'
         ]);
         Project::create($request->all());
 
@@ -49,43 +49,54 @@ class ProjectController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
         $project = Project::findOrFail($id);
-        return view('projects.show')->withProject($project);
+        return view('Projects.show', ['project' => $project]);
 
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        //
+        $project = Project::find($id);
+        return view('Projects.edit', compact('project'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required'
+
+        ]);
+        $project = Project::find($id);
+        $project->name = $request->get('name');
+        $project->description = $request->get('description');
+        $project->save();
+
+        return redirect('/projects')->with('success', 'updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

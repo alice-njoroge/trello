@@ -14,6 +14,8 @@
                                 </button>
                             </a>
                         </div>
+
+
                         <table class="table">
                             <thead>
 
@@ -31,10 +33,10 @@
                                     <td>{{$project->name}}</td>
                                     <td>{{$project->description}}</td>
                                     <td>
-                                        <a href="">
+                                        <a href="{{route('projects.show', $project->id)}}">
                                             <button type="button" class="btn btn-outline-success">Show</button>
                                         </a>
-                                        <a href="">
+                                        <a href="{{route('projects.edit', $project->id)}}">
                                             <button type="button" class="btn btn-outline-primary">Update</button>
                                         </a>
                                         <a href="">
