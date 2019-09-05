@@ -37,13 +37,13 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        $request-> validate([
+        $request->validate([
             'name'=> 'required|string',
             'description'=> 'required|string'
         ]);
         Project::create($request->all());
 
-        return redirect('/projects')->with('success', 'Project created successfuly');
+        return redirect('/projects')->with('success', 'Project created successfully');
     }
 
     /**

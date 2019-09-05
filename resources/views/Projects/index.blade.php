@@ -7,7 +7,11 @@
             <div class="col-md-8 offset-md-2 mt-3 ">
                 <div class="card">
                     <div class="card-body">
-                        <h2> Projects list</h2>
+                       <div class="card-header">
+                           Project list
+                           <a href="{{route('projects.create')}}"> <button type="button" class="btn btn-outline-primary float-right mb-2">add a project</button>
+                           </a>
+                       </div>
                         <table class="table">
                             <thead>
 

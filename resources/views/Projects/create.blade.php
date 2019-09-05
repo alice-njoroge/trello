@@ -5,7 +5,9 @@
         <div class="row">
             <div class="col-md-8 offset-md-2 mt-3">
                 <div class="card">
-                    <button type="button" class="btn btn-secondary btn-lg btn-bloc">Create a new Project here</button>
+                    <div class="card-header">
+                        Create a new project here
+                    </div>
                     <div class="card-body">
                         @if ($errors->any())
                             <div class="alert alert-danger">
@@ -16,6 +18,12 @@
                                 </ul>
                             </div>
                         @endif
+                        @if(session()->has('message'))
+                            <div class="alert alert-success">
+                                {{ session()->get('message') }}
+                            </div>
+                        @endif
+
                         <form method="post" action="{{route('projects.store')}}">
                             @csrf
                             <div class="form-group">
