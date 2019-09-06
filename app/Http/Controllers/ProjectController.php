@@ -90,7 +90,7 @@ class ProjectController extends Controller
         $project->description = $request->get('description');
         $project->save();
 
-        return redirect('/projects')->with('success', 'updated successfully');
+        return redirect(route('projects.index'))->with('success', 'updated successfully');
     }
 
     /**
@@ -101,6 +101,9 @@ class ProjectController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $project = Project::find($id);
+        $project->delete();
+
+        return redirect(route('projects.index'))->with('success','deleted successfully!');
     }
 }

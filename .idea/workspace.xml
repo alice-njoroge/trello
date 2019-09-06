@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88993ef7-5d84-4039-8f66-c835aa0cc4ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Projects/show.blade.php" afterDir="false" />
+    <list default="true" id="88993ef7-5d84-4039-8f66-c835aa0cc4ea" name="Default Changelist" comment="add update, show and functionalities  and the respective UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Projects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +176,8 @@
       <workItem from="1567497819237" duration="171000" />
       <workItem from="1567501936461" duration="9147000" />
       <workItem from="1567575784463" duration="607000" />
-      <workItem from="1567640278999" duration="7255000" />
+      <workItem from="1567640278999" duration="8584000" />
+      <workItem from="1567742260582" duration="4794000" />
     </task>
     <task id="LOCAL-00001" summary="add update, show and delete buttons">
       <created>1567643555867</created>
@@ -188,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567643555867</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add update, show and functionalities  and the respective UI">
+      <created>1567647736148</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567647736148</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +214,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add update, show and delete buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="add update, show and delete buttons" />
+    <MESSAGE value="add update, show and functionalities  and the respective UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add update, show and functionalities  and the respective UI" />
   </component>
 </project>
