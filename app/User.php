@@ -36,4 +36,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * a user has many projects
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function projects(){
+        return $this->hasMany('App\Project');
+    }
 }
