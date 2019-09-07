@@ -11,6 +11,11 @@
                     <div class="card-body">
                         <h6> <strong>Project description: </strong>{{$project->description}} </h6>
                     </div>
+                    <div class="card-footer">
+                       <a href="{{route('projects.index')}}" class="btn btn-outline-primary float-right">Back </a>
+
+                    </div>
+
                 </div>
 
             </div>
