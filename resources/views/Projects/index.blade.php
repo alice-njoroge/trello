@@ -44,8 +44,9 @@
                                            class="btn btn-outline-primary">Update
                                         </a>
                                         <a href="#"
-                                           onclick="document.getElementById('form{{$loop->iteration}}').submit();
-                                               " class="btn btn-outline-danger">Delete </a>
+                                           onclick="document.getElementById('form{{$loop->iteration}}').submit()
+                                               return confirmDelete();
+                                               " class="btn btn-outline-danger" >Delete </a>
 
                                         <form method="post" action="{{route('projects.destroy', $project->id)}}"
                                               id="form{{$loop->iteration}}">
@@ -57,6 +58,12 @@
                                 </tr>
 
                             @endforeach
+
+                            @if(empty($projects))
+                                <tr>
+                                    <td colspan="4" class="text-center">Sorry, You are out of stock</td>
+                                </tr>
+                            @endif
 
 
                             </tbody>
@@ -70,4 +77,10 @@
         </div>
 
     </div>
+    <script>
+        function confirmDelete() {
+            if(!confirm("Are You Sure to delete this"))
+                event.preventDefault();
+        }
+    </script>
 @endsection

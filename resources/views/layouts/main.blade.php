@@ -50,6 +50,10 @@
 @yield('content')
 
 <script src="{{ asset('js/app.js') }}" defer></script>
-
+<script>
+    $('a').on('click',function () {
+        this.attr("disabled", true);
+    })
+</script>
 </body>
 </html>
