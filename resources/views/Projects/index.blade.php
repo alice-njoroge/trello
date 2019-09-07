@@ -44,9 +44,9 @@
                                            class="btn btn-outline-primary">Update
                                         </a>
                                         <a href="#"
-                                           onclick="document.getElementById('form{{$loop->iteration}}').submit()
-                                               return confirmDelete();
-                                               " class="btn btn-outline-danger" >Delete </a>
+                                           onclick="
+                                               return confirmDelete('form{{$loop->iteration}}');
+                                               " class="btn btn-outline-danger">Delete </a>
 
                                         <form method="post" action="{{route('projects.destroy', $project->id)}}"
                                               id="form{{$loop->iteration}}">
@@ -77,10 +77,18 @@
         </div>
 
     </div>
+
+@endsection
+@push('scripts')
     <script>
-        function confirmDelete() {
-            if(!confirm("Are You Sure to delete this"))
-                event.preventDefault();
+        function confirmDelete(form_id) {
+            event.preventDefault();
+            var confirmation = confirm("Are You Sure to delete this");
+            if (confirmation) {
+                document.getElementById(form_id).submit()
+
+            }
+
         }
     </script>
-@endsection
+@endpush

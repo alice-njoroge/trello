@@ -18,7 +18,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::where('user_id', auth()->id())->get();
+        $projects = Project::where('user_id', auth()->user()->id)->get();
         return view('Projects.index', ['projects' => $projects]);
 
     }
@@ -45,8 +45,11 @@ class ProjectController extends Controller
             'name' => 'required|string',
             'description' => 'required|string'
         ]);
-        Project::create($request->all());
-
+        $project = new Project();
+        $project->user_id = auth()->user()->id;
+        $project->name = $request->get('name');
+        $project->description = $request->get('description');
+        $project->save();
         return redirect('/projects')->with('message', 'Project created successfully');
     }
 
@@ -89,7 +92,7 @@ class ProjectController extends Controller
             'description' => 'required'
 
         ]);
-        $project = Project::find($id);
+        $project = Project::findOrFail($id);
         $project->name = $request->get('name');
         $project->description = $request->get('description');
         $project->save();
