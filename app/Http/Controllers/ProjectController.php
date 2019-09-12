@@ -100,9 +100,10 @@ class ProjectController extends Controller
         $project = Project::findOrFail($id);
         $project->name = $request->get('name');
         $project->description = $request->get('description');
+        $this->authorize('update', $project);
         $project->save();
 
-        $this->authorize('update', $project);
+
 
         return redirect(route('projects.index'))->with('success', 'updated successfully');
     }
@@ -112,11 +113,14 @@ class ProjectController extends Controller
      *
      * @param int $id
      * @return Response
+     * @throws AuthorizationException
      */
     public function destroy($id)
     {
         $project = Project::find($id);
+        $this->authorize('update', $project);
         $project->delete();
+
 
         return redirect(route('projects.index'))->with('success','deleted successfully!');
     }
