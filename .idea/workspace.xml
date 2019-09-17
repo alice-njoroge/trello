@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88993ef7-5d84-4039-8f66-c835aa0cc4ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trello.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trello.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Projects/tasks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -198,7 +191,7 @@
       <workItem from="1567640278999" duration="8584000" />
       <workItem from="1567742260582" duration="17046000" />
       <workItem from="1568266748574" duration="7090000" />
-      <workItem from="1568741597909" duration="6687000" />
+      <workItem from="1568741597909" duration="9040000" />
     </task>
     <task id="LOCAL-00001" summary="add update, show and delete buttons">
       <created>1567643555867</created>
@@ -270,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568270134851</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add project tasks: index method">
+      <created>1568748372734</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568748372734</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +300,7 @@
     <MESSAGE value="fix javascript and provide currently logged user when adding new projects" />
     <MESSAGE value="add policies to ensure that every users only views and updates their projects only" />
     <MESSAGE value="add delete policies" />
-    <option name="LAST_COMMIT_MESSAGE" value="add delete policies" />
+    <MESSAGE value="add project tasks: index method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add project tasks: index method" />
   </component>
 </project>

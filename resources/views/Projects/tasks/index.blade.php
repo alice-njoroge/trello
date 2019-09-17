@@ -5,8 +5,9 @@
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="card mt-3">
-                    <div class="header">
-                        <a href="" class="btn btn-outline-success float-right mr-1 mt-1" >Add Tasks</a>
+                    <div class="card-header">
+                        <a href="{{route('create_task', $project_id)}}"
+                           class="btn btn-outline-success float-right mr-1 mt-1">Add Tasks</a>
                     </div>
                     <div class="card-body">
                         <table class="table">
@@ -33,11 +34,11 @@
 
                     </div>
                     <div class="card-footer">
-                        <a href="" class="btn btn-outline-primary float-right mr-1 mt-1 mb-1" >Go Back </a>
+                        <a href="" class="btn btn-outline-primary float-right mr-1 mt-1 mb-1">Go Back </a>
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    @endsection
+@endsection
