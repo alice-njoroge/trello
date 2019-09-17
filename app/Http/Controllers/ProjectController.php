@@ -119,6 +119,7 @@ class ProjectController extends Controller
     {
         $project = Project::find($id);
         $this->authorize('update', $project);
+
         $project->delete();
 
 

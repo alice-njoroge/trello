@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('projects','ProjectController');
+
+Route::get('/projects/{project_id}/tasks','TaskController@index')->name('tasks');

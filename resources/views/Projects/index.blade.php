@@ -43,6 +43,9 @@
                                         <a href="{{route('projects.edit', $project->id)}}"
                                            class="btn btn-outline-primary">Update
                                         </a>
+                                        <a href="{{route('tasks', $project->id)}}"
+                                           class="btn btn-outline-success">View Tasks
+                                        </a>
                                         <a href="#"
                                            onclick="
                                                return confirmDelete('form{{$loop->iteration}}');
@@ -54,14 +57,15 @@
                                             @method('DELETE')
                                         </form>
 
+
                                     </td>
                                 </tr>
 
                             @endforeach
 
-                            @if(empty($projects))
+                            @if($projects->isEmpty())
                                 <tr>
-                                    <td colspan="4" class="text-center">Sorry, You are out of stock</td>
+                                    <td colspan="4" class="text-center">No projects at the moment</td>
                                 </tr>
                             @endif
 
