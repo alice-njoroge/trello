@@ -21,5 +21,14 @@ class Project extends Model
         return $this->hasMany('App\Task');
     }
 
+// add new tasks to  a project
+    public function addTask($name, $status){
+         $this->tasks()->create([
+            'name'=> $name,
+            'status'=> $status
+        ]);
+
+    }
+
 
 }

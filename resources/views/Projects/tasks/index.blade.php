@@ -4,6 +4,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
+                @if ($message = Session::get('success'))
+                    <div class="alert alert-success">
+                        <p>{{ $message }}</p>
+                    </div>
+                @endif
                 <div class="card mt-3">
                     <div class="card-header">
                         <a href="{{route('create_task', $project_id)}}"
@@ -14,9 +19,9 @@
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Name</th>
+                                <th scope="col" >Name</th>
                                 <th scope="col">Status</th>
-                                <th scope="col">Actions</th>
+                                <th scope="col" >Actions</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -25,7 +30,11 @@
                                     <th scope="row">{{$loop->iteration}}</th>
                                     <td>{{$task->name}}</td>
                                     <td>status</td>
-                                    <td>action</td>
+                                    <td colspan="3">
+                                        <button type="button" class="btn btn-outline-primary">Show</button>
+                                        <button type="button" class="btn btn-outline-secondary">Update</button>
+                                        <button type="button" class="btn btn-outline-danger">delete</button>
+                                    </td>
                                 </tr>
                             @endforeach
 
