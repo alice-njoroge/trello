@@ -19,9 +19,9 @@
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col" >Name</th>
+                                <th scope="col">Name</th>
                                 <th scope="col">Status</th>
-                                <th scope="col" >Actions</th>
+                                <th scope="col">Actions</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -31,7 +31,8 @@
                                     <td>{{$task->name}}</td>
                                     <td>status</td>
                                     <td colspan="3">
-                                        <button type="button" class="btn btn-outline-primary">Show</button>
+                                        <a href="{{route('show_task', [$project_id, $task->id])}}"
+                                           class="btn btn-outline-primary">Show</a>
                                         <button type="button" class="btn btn-outline-secondary">Update</button>
                                         <button type="button" class="btn btn-outline-danger">delete</button>
                                     </td>

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88993ef7-5d84-4039-8f66-c835aa0cc4ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/delete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Projects/tasks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Projects/tasks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -192,7 +193,8 @@
       <workItem from="1567640278999" duration="8584000" />
       <workItem from="1567742260582" duration="17046000" />
       <workItem from="1568266748574" duration="7090000" />
-      <workItem from="1568741597909" duration="16736000" />
+      <workItem from="1568741597909" duration="21434000" />
+      <workItem from="1569044741000" duration="1448000" />
     </task>
     <task id="LOCAL-00001" summary="add update, show and delete buttons">
       <created>1567643555867</created>
@@ -278,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568750720754</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="store tasks for a project">
+      <created>1568789725975</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568789725975</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +319,7 @@
     <MESSAGE value="add delete policies" />
     <MESSAGE value="add project tasks: index method" />
     <MESSAGE value="add create tasks method and blade" />
-    <option name="LAST_COMMIT_MESSAGE" value="add create tasks method and blade" />
+    <MESSAGE value="store tasks for a project" />
+    <option name="LAST_COMMIT_MESSAGE" value="store tasks for a project" />
   </component>
 </project>

@@ -118,7 +118,7 @@ class ProjectController extends Controller
     public function destroy($id)
     {
         $project = Project::find($id);
-        $this->authorize('update', $project);
+        $this->authorize('destroy', $project);
 
         $project->delete();
 
