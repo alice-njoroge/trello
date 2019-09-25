@@ -105,6 +105,7 @@ class ProjectController extends Controller
 
 
 
+
         return redirect(route('projects.index'))->with('success', 'updated successfully');
     }
 

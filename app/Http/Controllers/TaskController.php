@@ -27,7 +27,7 @@ class TaskController extends Controller
     public function store(Project $project_id, Request $request)
     {
         $request->validate([
-            'name' => 'require//d|string',
+            'name' => 'required|string',
             'status' => 'required|string'
         ]);
         $project_id->addTask($request->input('name'), $request->input('status'));

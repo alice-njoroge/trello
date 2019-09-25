@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88993ef7-5d84-4039-8f66-c835aa0cc4ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Projects/tasks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Projects/tasks/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,7 +142,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../setters.php" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -195,6 +197,10 @@
       <workItem from="1568266748574" duration="7090000" />
       <workItem from="1568741597909" duration="21434000" />
       <workItem from="1569044741000" duration="1448000" />
+      <workItem from="1569232837048" duration="2050000" />
+      <workItem from="1569249238968" duration="761000" />
+      <workItem from="1569255341033" duration="829000" />
+      <workItem from="1569394383558" duration="9865000" />
     </task>
     <task id="LOCAL-00001" summary="add update, show and delete buttons">
       <created>1567643555867</created>
