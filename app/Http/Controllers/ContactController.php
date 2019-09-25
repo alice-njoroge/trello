@@ -26,7 +26,7 @@ class ContactController extends Controller
         ]);
         //send the mail
         Mail::to('test@test.com')->queue(new ContactFormMail($data));
-        return redirect(route('contact'))->with('message', 'Thank you for your email.');
+        return redirect(route('contact'))->with('message', 'Thank you for your email '.$data['name']);
     }
 
 }
